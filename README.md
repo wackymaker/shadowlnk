@@ -89,8 +89,11 @@ When the `-power` parameter is used, the vbs script is replaced by a version tha
 However, it is important to note that although this is well disguised, some savvy users might notice why a Simple video player would require administrator privileges. Please use this feature with caution in practice.
 
 # 使用视频 / Usage Video
-还没时间录制。  
-No video recording available yet.
+
+
+https://github.com/user-attachments/assets/5ed3481a-5024-4c3a-b064-96f93f9ffddf
+
+
 # how to use
 用法 / Usage:
   shadowlnk -i <目标LNK路径> -w <可写目录> -p <PE载荷路径> [-x <载荷启动参数>] [-power]
