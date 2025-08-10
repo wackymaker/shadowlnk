@@ -76,17 +76,17 @@ C:\Users\wacky\Desktop\shadowlnk>
 In short, after a very brief transformation, the target’s desktop shortcut will be replaced by our hijacked version. Thereafter, every time the user clicks this shortcut, our payload will be launched with almost no perceptible difference.
 
 ### 高级效果 / Advanced Features
-当不使用-i参数而使用-r参数的时候，程序自动替换指定目录下所有lnk，并且做了安全冗余设计，即使不同的快捷方式指向一个exe也不会报错，单线程的处理劫持不会使用户桌面打乱，而是维持原样
+当不使用-i参数而使用-r参数的时候，程序自动替换指定目录下所有lnk，并且做了安全冗余设计，即使不同的快捷方式指向一个exe也不会报错，单线程的处理劫持不会使用户桌面打乱，而是维持原样，但是还是不建议在实战环境当中直接全部替换，一些杀软会检测自身状态，一旦修改则会报敏感，浏览器也是同样的道理，但是正常的第三方程序并无此效果
 
 当使用-power参数后，vbs脚本会替换为强制管理员执行的版本，但由于执行vbs脚本的程序为win自带，所以并不会报未授权签名行为，和大部分的白程序uac认证界面相同，这可以做到强制无感要求用户以管理员上线我们的机器
 
-但是需要注意，虽然这一切伪装的很好，但还是有聪明人会注意到为何一个浏览器启动需要管理员权限的，所以实际使用中请谨慎使用
+但是需要注意，虽然这一切伪装的很好，但还是有聪明人会注意到为何一个简单的视频播放器启动需要管理员权限的，所以实际使用中请谨慎使用
 
-When the `-r` parameter is used instead of `-i`, the program automatically replaces all shortcuts in the specified directory and incorporates safety redundancy design. Even if multiple shortcuts point to the same exe, no errors occur. The single-threaded hijacking process will not disrupt the user’s desktop but keep it intact.
+When the `-r` parameter is used instead of `-i`, the program automatically replaces all shortcuts in the specified directory and incorporates safety redundancy design. Even if multiple shortcuts point to the same exe, no errors occur. The single-threaded hijacking process will not disrupt the user’s desktop but keep it intact.However, it is still not recommended to directly replace everything in a real-world environment. Some antivirus software can detect its own state, and any modifications may trigger sensitive alerts. The same principle applies to browsers, but regular third-party programs typically do not exhibit this behavior.
 
 When the `-power` parameter is used, the vbs script is replaced by a version that forces administrator execution. Because the vbs script is executed by Windows built-in programs, there will be no unauthorized signature warnings. This behaves similarly to most legitimate programs’ UAC prompts, enabling stealthy forced elevation to run our payload as administrator.
 
-However, it is important to note that although this is well disguised, some savvy users might notice why a browser would require administrator privileges. Please use this feature with caution in practice.
+However, it is important to note that although this is well disguised, some savvy users might notice why a Simple video player would require administrator privileges. Please use this feature with caution in practice.
 
 # 使用视频 / Usage Video
 还没时间录制。  
